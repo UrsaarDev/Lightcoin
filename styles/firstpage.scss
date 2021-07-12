@@ -1,0 +1,170 @@
+$baseUrl : 'http://localhost:3000/';
+
+.header {
+    padding-top   : 20px;
+    padding-bottom: 20px;
+
+    .logo {
+        margin-left: 15%;
+        width      : 70%;
+
+        a {
+            padding-top   : .3125rem;
+            padding-bottom: .3125rem;
+            img {
+                width:120px;
+            }
+            @media screen and (max-width: 640px) {
+                img {
+                    width:100px;
+                }
+            }
+            @media screen and (max-width: 414px) {
+                img {
+                    width:80px;
+                }
+            }
+
+    
+        }
+
+        .MuiButton-root {
+            float        : right;
+            border       : 2px solid white;
+            border-radius: 25px;
+            padding      : 4px 20.3px;
+            height       : 88%;
+
+            .MuiButton-label {
+                font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
+                font-size  : 18px !important;
+                font-weight: 550 !important;
+            }
+
+            @media screen and (max-width: 640px) {
+                .MuiButton-label {
+                    font-size: 14px !important;
+                }
+            }
+
+            @media screen and (max-width: 414px) {
+                .MuiButton-label {
+                    font-size: 10px !important;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    padding-top   : 50px;
+    padding-bottom: 50px;
+
+    .card-header {
+        background-image       : url($baseUrl+'image/cardheaderback.png');
+        background-size        : 100% 100%;
+        border-top-left-radius : 15px;
+        border-top-right-radius: 15px;
+        display                : flex;
+        padding                : 10px 10px 10px 15px;
+
+        .action {
+            align-self  : center;
+            margin-left : auto;
+            margin-right: 5px;
+            width       : 24px;
+            height      : 26px;
+        }
+        @media screen and (max-width: 640px) {
+            .action {
+                width:22px;
+                height:24px;
+            }
+        }
+        @media screen and (max-width: 414px) {
+            .action {
+                width:20px;
+                height:22px;
+            }
+        }
+    }
+
+    .card-two {
+        padding: 12px;
+    }
+
+    .card-period {
+        border-radius      : 15px;
+        width              : 80%;
+        margin             : auto;
+        background-image   : url($baseUrl+'image/verti_gradi.png');
+        background-size    : 49px 100%;
+        background-position: 0;
+        background-repeat  : no-repeat;
+        background-color   : rgba(61, 14, 14, .442);
+
+        .MuiGrid-root {
+            padding-right: 20px;
+        }
+    }
+
+    .card-content {
+        padding                   : 20px;
+        border-bottom-left-radius : 15px;
+        border-bottom-right-radius: 15px;
+        background                : rgba(61, 14, 14, .442);
+    }
+
+    .grey-border1 {
+        border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+
+        .card-input {
+            line-height     : inherit;
+            font-family     : inherit;
+            font-size       : inherit !important;
+            float           : right;
+            border          : none;
+            outline         : none;
+            padding-bottom  : 10px;
+            max-width       : 150px;
+            background-color: transparent;
+            border-bottom   : 1px solid #d13737 !important;
+        }
+    }
+
+    .grey-border2 {
+        border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+        margin       : auto;
+        width        : auto;
+
+        .MuiGrid-root {
+            padding: 5px !important;
+        }
+    }
+
+    .grey-border2:nth-child(6) {
+        border-bottom: unset;
+    }
+
+    .radio-group {
+        margin-top: -7px;
+    }
+
+    .eth-string {
+        color: #e31e2d;
+    }
+
+    .submit-btn {
+        padding      : 14px;
+        width        : 80%;
+        background   : #0dbf4a;
+        font-size    : 22px;
+        color        : white;
+        border       : none;
+        outline      : none;
+        font-weight  : 600;
+        border-radius: 58px;
+        line-height  : inherit;
+        margin-bottom: 20px;
+    }
+}

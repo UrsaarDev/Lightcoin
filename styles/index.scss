@@ -1,0 +1,101 @@
+@import "firstpage";
+
+$baseUrl : 'http://localhost:3000/';
+
+@font-face {
+  font-family: bwmodel;
+  src        : url($baseUrl+'fonts/BWMODEL.OTF');
+}
+
+html,
+body {
+  margin             : 0 !important;
+  background-image   : url($baseUrl+'image/background.png');
+  background-size    : cover;
+  background-position: 50%;
+  height             : 100vh;
+  line-height        : 1.5 !important;
+}
+
+body * {
+  color      : white;
+  font-family: bwmodel;
+}
+
+.font1 {
+  font-size: 22px !important;
+}
+
+@media screen and (max-width: 640px) {
+  .font1 {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .font1 {
+    font-size: 18px !important;
+  }
+}
+
+.font2 {
+  font-size: 18px !important;
+}
+
+@media screen and (max-width: 640px) {
+  .font2 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .font2 {
+    font-size: 14px !important;
+  }
+}
+
+.font3 {
+  font-size: 20px !important;
+}
+
+@media screen and (max-width: 640px) {
+  .font3 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .font3 {
+    font-size: 14px !important;
+  }
+}
+
+.font4 {
+  font-size  : 13px !important;
+  font-weight: 300 !important;
+  color      : hsla(0, 0%, 100%, .8) !important;
+}
+
+@media screen and (max-width: 640px) {
+  .font4 {
+    font-size: 11px !important;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .font4 {
+    font-size: 9px !important;
+  }
+}
+
+.float-right {
+  float: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
